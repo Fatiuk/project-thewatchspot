@@ -1,0 +1,83 @@
+/**=============== Body styles ===============*/
+body {
+    font-family: 'Epilogue', sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+/**=============== Base styles ===============*/
+
+/** Additional class for sections (mobile) */
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/** Additional container class (mobile) */
+.container {
+    max-width: 355px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+
+    /** Additional class for sections  */
+    .section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    /** Additional container class */
+    .container {
+        max-width: 736px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    /** Additional class for sections (desktop) */
+    .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /** Additional container class (desktop) */
+    .container {
+        max-width: 1200px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+/**=============== Additional hidden class ===============*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/**=============== Additional styles ===============*/
+
+/** Global style for buttons */
+button {
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.66;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}

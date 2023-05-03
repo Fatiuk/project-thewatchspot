@@ -4,22 +4,25 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
+/**=============== Base styles ===============*/
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/base.css');
+
+/**=============== Page styles ===============*/
+/** Header */
 @import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/** Section 1 Hero */
+@import url('./hero.css');
+/** Section 2 "About us */
+@import url('./about.css');
+/** Section 3 "Catalog */
+@import url('./catalog.css');
+/** Section 4 "New watches */
+@import url('./watches.css');
+/** Section 5 "Sale */
+@import url('./sale.css');
+/** Footer */
+@import url('./footer.css');
+/** Buy now (popup) */
+@import url('./popup.css');
