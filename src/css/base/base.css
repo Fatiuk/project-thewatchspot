@@ -15,9 +15,9 @@ body {
 
 /** Additional container class (mobile) */
 .container {
-    max-width: 355px;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -32,9 +32,9 @@ body {
 
     /** Additional container class */
     .container {
-        max-width: 736px;
-        padding-left: 16px;
-        padding-right: 16px;
+        max-width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
