@@ -2,11 +2,53 @@
   background-color: #1e2827;
 }
 .footer-container {
-  width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
 }
-.logo-icon {
-  fill: green;
+.footer-logo {
+  color: white;
+  display: block;
+}
+.footer-logo-link {
+}
+.footer-list {
+  display: block;
+  flex-direction: column;
+  text-align: end;
+  color: white;
+}
+.phone-number {
+  color: white;
+}
+.address {
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-social {
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-item {
+}
+.footer-social-icon {
+  fill: white;
+}
+.footer-social-link {
+}
+.copyright {
+  color: #c6cdd1;
+}
+.privacy-terms {
+  color: #c6cdd1;
+}
+.privacy-policy {
+  color: #c6cdd1;
+}
+.terms {
+  color: #c6cdd1;
 }
