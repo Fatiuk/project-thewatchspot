@@ -1,6 +1,6 @@
 :root {
     --color-dark-green: rgb(30, 40, 39);
-    --color-black: rgb(20, 20, 20);
+    --color-black: #141414;
     --color-white: rgb(255, 255, 255);
 
     --color-black-alpha: rgba(20, 20, 20, 0.5);

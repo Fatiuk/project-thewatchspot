@@ -1,0 +1,38 @@
+.hero {
+    background-color: var(--color-black) ;
+}
+.hero-container {
+    
+    
+
+}
+.container {
+padding-top: 122px;
+padding-bottom: 40px;
+
+
+}
+.hero_title {
+font-weight: 600;
+font-size: 38px;
+line-height: 1.05;
+letter-spacing: 0.04em;
+color:var(--color-white);
+
+}
+.hero_swiper {
+}
+.hero_text {
+font-weight: 300;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+color:var(--color-white);
+width: 248px;
+}
+.hero_images {
+}
+.swiper {
+    width: 266px;
+    height: 200px;
+  }
