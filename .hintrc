@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/name-role-value": "off",
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/layout": "off"
+  }
+}
