@@ -1,6 +1,7 @@
 .footer {
   background-color: #1e2827;
 }
+
 .footer-container {
   margin: 0 auto;
   padding-left: 20px;
@@ -8,7 +9,7 @@
   padding-top: 40px;
 }
 .footer-logo {
-  color: white;
+  fill: white;
   display: block;
 }
 .footer-logo-link {
@@ -25,6 +26,7 @@
 .address {
   color: white;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .footer-social {
@@ -32,6 +34,7 @@
 .footer-social-list {
   display: flex;
   gap: 16px;
+  margin-bottom: 80px;
 }
 .footer-social-item {
 }
@@ -42,6 +45,7 @@
 }
 .copyright {
   color: #c6cdd1;
+  margin-bottom: 14px;
 }
 .privacy-terms {
   color: #c6cdd1;
