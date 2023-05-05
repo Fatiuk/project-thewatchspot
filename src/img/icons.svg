@@ -1,9 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
-    <symbol id="icon-logo" viewBox="0 0 28 32">
-      <path d="M21.073 16.002 17.239 7.22l-.836-.58-.98-.312-1.326-.357-1.557.669-1.038.58 3.92 8.782h5.65zM7.314 13.065l3.834 8.803.836.581.98.313 1.326.357 1.557-.67 1.038-.581-3.921-8.803h-5.65z" style="fill:var(--color2, #000)"/>
-      <path fill="#fff" d="m11.298 7.335-5.952 8.604 5.952.064 4.303-8.667c.302-.887 1.247-.369 1.682 0-1.858-3.405-4.764-1.419-5.985 0zm5.768 14.421 5.952-8.604-5.952-.064-4.303 8.667c-.302.887-1.247.369-1.682 0 1.858 3.405 4.764 1.419 5.985 0z" style="fill:var(--color1, #fff)"/>
-    </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.733" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
