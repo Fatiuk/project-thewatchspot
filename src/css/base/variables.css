@@ -1,10 +1,13 @@
 :root {
     --color-dark-green: rgb(30, 40, 39);
     --color-black: rgb(20, 20, 20);
+    --color-grey: rgba(198, 205, 209, 1);
     --color-white: rgb(255, 255, 255);
 
     --color-black-alpha: rgba(20, 20, 20, 0.5);
+    --color-black-extra-alpha: rgba(20, 20, 20, 0.4);
     --color-white-alpha: rgba(255, 255, 255, 0.5);
+    --color-border-alpha: rgba(255, 255, 255, 0.1);
 
     --typical-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
