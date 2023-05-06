@@ -2,7 +2,7 @@
 body {
     font-family: 'Epilogue', sans-serif;
     color: var(--color-black);
-    background-color: var(--color-white);
+    background-color: var(--background-color);
 }
 
 /**=============== Base styles ===============*/
