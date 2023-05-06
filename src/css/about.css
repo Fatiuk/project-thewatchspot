@@ -46,7 +46,17 @@
     color: var(--color-black);
 }
 
-/* -------------min-width: 768px------------ */
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.about_div::after {
+        bbackground-image: url(/img/about_us/watchspot.gif);
+    }
+}
+
+/* --------min-width: 768px---------- */
 @media screen and (min-width: 768px) {
 
     .about_title_text {
@@ -75,7 +85,7 @@
     }
 }
 
-/* -------------min-width: 1280px------------ */
+/* ------min-width: 1280px--------- */
 @media screen and (min-width: 1280px) {
 
     .about_item {
