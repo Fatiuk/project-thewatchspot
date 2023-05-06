@@ -1,5 +1,30 @@
 /**=============== Sale section ===============*/
 /** Additional container */
+/** Header */
+.sale-title {
+    margin-bottom: 40px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--color-dark-green);
+}
+
+@media screen and (min-width: 768px) {
+    .sale-title {
+        font-size: 40px;
+        line-height: 1.10;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-title {
+        margin-bottom: 40px;
+    }
+}
+
+/** Additional container */
 @media screen and (min-width: 768px) {
     .extra-sale-container {
         max-width: 572px;
@@ -136,6 +161,16 @@
 /** "Description and Details" styles */
 .sale-info-item {
     position: relative;
+}
+
+.sale-info-item:first-child {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-info-item:first-child {
+        margin-bottom: 20px;
+    }
 }
 
 .sale-info-title {
