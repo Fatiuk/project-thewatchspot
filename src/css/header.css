@@ -58,8 +58,12 @@
   text-transform: uppercase;
   display: flex;
   gap: 40px;
+  transition: border var(--typical-transition);
 }
 
+.site-nav a:hover {
+  color: var(--color-white-alpha);
+}
 
 .button-address {
   background-color: var(--color-dark-green);
