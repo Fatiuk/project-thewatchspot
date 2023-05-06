@@ -66,45 +66,59 @@
 }
 
 /** Photo grid */
-.sale-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
+@media screen and (max-width: 374px) {
+    .sale-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 235px;
+    }
 }
 
-.sale-item {
-    margin: auto;
-}
+@media screen and (min-width: 375px) {
+    .sale-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
 
-.sale-item img {
-    max-width: 406px;
-}
+    .sale-item {
+        margin: auto;
+    }
 
-.sale-item:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 2;
-}
+    .sale-item img {
+        max-width: 406px;
+    }
 
-.sale-item:nth-child(2) {
-    grid-area: 2 / 1 / 3 / 2;
-}
+    .sale-item:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+    }
 
-.sale-item:nth-child(3) {
-    grid-area: 3 / 1 / 4 / 2;
-}
+    .sale-item:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+    }
 
-.sale-item:nth-child(4) {
-    grid-area: 4 / 1 / 5 / 2;
-}
+    .sale-item:nth-child(3) {
+        grid-area: 3 / 1 / 4 / 2;
+    }
 
-.sale-item:nth-child(5) {
-    grid-area: 1 / 2 / 5 / 3;
-}
+    .sale-item:nth-child(4) {
+        grid-area: 4 / 1 / 5 / 2;
+    }
 
-.sale-item:nth-child(-n + 4)>img {
-    width: 146px;
-    width: 146px;
+    .sale-item:nth-child(5) {
+        grid-area: 1 / 2 / 5 / 3;
+    }
+
+    .sale-item:nth-child(-n + 4)>img {
+        width: 146px;
+        width: 146px;
+    }
 }
 
 /**=============== Sale thumb ===============*/
