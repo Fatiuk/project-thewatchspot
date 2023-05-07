@@ -1,15 +1,13 @@
-
 .watches {
   background-color: var(--color-white);
 }
 
 .watches-pre-title {
   font-weight: 600;
-  font-style: normal;
   font-size: 32px;
   line-height: calc(40 / 32);
-  margin: 0;
-  width: 335px;
+  letter-spacing: -0.02em;
+  max-width: 335px;
 }
 
 .watches-title {
@@ -17,8 +15,7 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.06em;
-  color: rgba(20, 20, 20, 0.4);
-  margin: 0;
+  color: var(--color-black-extra-alpha);
   margin-bottom: 8px;
 }
 
@@ -30,11 +27,10 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .watches-pre-title {
     font-size: 40px;
     line-height: calc(44 / 40);
-    width: 480px;
+    max-width: 480px;
   }
 
   .new-watches-list {
@@ -43,8 +39,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   .new-watches-list {
-    flex-direction: row;
+    margin-top: 80px;
+    gap: 24px;
   }
 }
