@@ -25,6 +25,13 @@
 }
 
 /* ================================ all style ==============================*/
+.catalog-button{
+    transition: border var(--typical-transition);
+}
+.catalog-button:hover{
+    border-color: var(--color-white);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .overlay-title{
     margin-bottom: 10px;
     font-weight: 400;
