@@ -1,0 +1,195 @@
+/* ================================ flip-card ==============================*/
+.flip-card-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-front>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ================================ all style ==============================*/
+.overlay-title{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+.overlay-text{
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+    color: var(--color-white-alpha);
+}
+.content{
+    margin-top: 14px;
+}
+
+.catalog-title{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+    color: var(--color-black);
+}
+.catalog-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--color-black-alpha);
+}
+
+/* ================================ mobile style ==============================*/
+@media screen and (max-width: 1279px){
+    .model-watch{
+    display: none;
+    }
+    .content-item{
+    max-width: 336px;
+    height: 410px;
+    }
+    .flip-card {
+    position: relative;
+    background-color: transparent;
+    height: 360px;
+    max-width: 336px;
+    perspective: 1000px;
+}
+.flip-card-back {
+    background-color: var(--color-dark-green);
+    color: white;
+    max-width: 336px;
+    height: 360px;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    border-radius: 8px;
+}
+}
+@media screen and (max-width: 767px){
+    .catalog-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 40px 0px;
+        }
+    .catalog-button{
+    display: block;
+    margin-left: auto;
+    padding: 14px 28px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+}
+}
+@media screen and (min-width: 320px){
+    .card-back-content{
+    padding: 46px 59px 41px 40px;
+}
+.catalog-box-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+}
+/* ================================ tablet style ==============================*/
+@media screen and (max-width: 1279px){
+    .catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 32px;
+    margin-bottom: 40px;
+    }
+}
+@media screen and (min-width: 768px){
+    .card-back-content{
+    padding: 46px 60px 39px 40px;
+}
+    .catalog-box-title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 40px;
+}
+    .catalog-button{
+    display: block;
+    margin-left: auto;
+    padding: 18px 35px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+}
+}
+/* ================================ desktop style ==============================*/
+@media screen and (min-width: 1280px){
+    .catalog-box-title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 64px;
+}
+    .card-back-content{
+    padding: 26px 20px 20px 20px;
+}
+    .content-item{
+    max-width: 276px;
+    height: 375px;
+    }
+    .flip-card {
+    position: relative;
+    background-color: transparent;
+    max-width: 276px;
+    perspective: 1000px;
+}
+    .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    margin-bottom: 80px;
+        }
+    .flip-card-back {
+    background-color: var(--color-dark-green);
+    color: white;
+    max-width: 276px;
+    height: 325px;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    border-radius: 8px;
+}
+}
