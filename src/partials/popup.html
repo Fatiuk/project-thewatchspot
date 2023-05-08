@@ -1,15 +1,15 @@
-<!-- ----- Popup ----- -->
+<!-- Buy now -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal-btn-close" type="button">
+    <button type="button" class="modal-btn-close" data-modal-close>
       <svg class="modal-icon" width="20" height="20">
         <use href="../img/modal/btn-close.svg#icon-btn-close"></use>
       </svg>
     </button>
     <div class="modal-card">
       <img
-        srcset="../img/modal/IMG_9466 1.jpg 1x, ../img/modal/IMG_9466 1 1.jpg 2x"
-        src="../img/modal/IMG_9466 1.jpg"
+        srcset="../img/modal/watch2.jpg 1x, ../img/modal/watch3.jpg 2x"
+        src="../img/modal/watch1.jpg"
         alt="watch"
         class="modal-img"
         width="276"
@@ -18,60 +18,58 @@
       <p class="modal-text">Tube Watch S42 Date Steel With Black Case</p>
       <span class="price">€395</span>
     </div>
+
     <form class="modal-form">
-      <div class="input-card">
+      <div class="input-group">
         <label class="modal-label" for="text">Full name</label>
         <input
           type="text"
           name="user-name"
-          id="user-name"
           class="modal-input"
+          id="text"
           placeholder="Enter your full name"
           required
         />
       </div>
-      <div class="input-card">
-        <label class="modal-label" for="text">Email</label>
+      <div class="input-group">
+        <label class="modal-label" for="email">Email</label>
         <input
-          type="text"
+          type="email"
           name="user-email"
-          id="user-email"
           class="modal-input"
+          id="email"
           placeholder="Enter your email"
           required
         />
       </div>
-      <div class="input-card">
-        <label class="modal-label" for="text">Card number</label>
+      <div class="input-group">
+        <label class="modal-label" for="card-number">Card number</label>
         <input
           type="text"
-          name="user-card"
-          id="user-card"
+          name="card-number"
           class="modal-input"
+          id="card-number"
           placeholder="Enter card"
           required
         />
       </div>
-      <div class="textarea-card">
-        <label class="modal-label" for="text">Comments</label>
+      <div class="textarea-group">
+        <label class="modal-label" for="user-comment">Comments</label>
         <textarea
           class="modal-textarea"
-          type="text"
           name="user-comment"
           id="user-comment"
-          class="modal-input"
           placeholder="Enter your text"
-          required
-        >
-        </textarea>
+        ></textarea>
       </div>
-      <button class="submit-btn" type="button">submit</button>
-      <p class="modal-text">
-        By clicking on “Submit” button, you agree to our
-        <a href="" class="privacy" target="_blank" rel="noopener noreferrer"
-          >Privacy Policy </a
+      <button type="submit" class="submit-btn">submit</button>
+      <p class="modal-subtitle">
+        By clicking on "Send message" button, you agree to our
+        <a href="#" class="privacy" target="_blank" rel="noopener noreferrer"
+          >Privacy Policy</a
         >, and allow Promodo to use this information for marketing purposes.
       </p>
     </form>
   </div>
 </div>
+<script src="../js/modal.js"></script>
