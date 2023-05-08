@@ -16,11 +16,11 @@
 overflow-y: hidden;
 }
 
-/* .is-hidden {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+} 
 
 .modal {
     position: absolute;
@@ -34,9 +34,9 @@ overflow-y: hidden;
     transition: transform var(--typical-transition);
 }
 
-/* .backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal {
     transform: scale(0);
-} */
+} 
 
 .modal-btn-close {
     position: absolute;
@@ -276,9 +276,9 @@ overflow-y: hidden;
         transform: translate(-50%, -50%) scaleY(1);
     }
 
-    /* .backdrop.is-hidden .modal {
+    .backdrop.is-hidden .modal {
         transform: translate(-50%, -50%) scaleY(0)
-    } */
+    }
 
     .input-group {
         margin-bottom: 24px;
