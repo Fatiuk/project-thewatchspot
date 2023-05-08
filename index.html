@@ -29,7 +29,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
     <script type="module" crossorigin src="/project-thewatchspot/assets/index-62a1c152.js"></script>
-    <link rel="stylesheet" href="/project-thewatchspot/assets/index-218b9a67.css">
+    <link rel="stylesheet" href="/project-thewatchspot/assets/index-8582b048.css">
   </head>
   <body>
     <!-- Header -->
@@ -999,7 +999,81 @@
 </footer>
 
     <!-- Buy now (popup) -->
-    
+    <!-- Buy now -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon" width="20" height="20">
+        <use href="/project-thewatchspot/assets/icons-263d0405.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-card">
+      <img
+        srcset="/project-thewatchspot/assets/catalog-model1-4d44fee2.png 1x, /project-thewatchspot/assets/catalog-model1@2x-24312650.png 2x"
+        src="/project-thewatchspot/assets/catalog-model1-4d44fee2.png"
+        alt="watch"
+        class="modal-img"
+        width="276"
+        height="274"
+      />
+      <p class="modal-text">Tube Watch S42 Date Steel With Black Case</p>
+      <span class="price">€395</span>
+    </div>
+
+    <form class="modal-form">
+      <div class="input-group">
+        <label class="modal-label" for="text">Full name</label>
+        <input
+          type="text"
+          name="user-name"
+          class="modal-input"
+          id="text"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <div class="input-group">
+        <label class="modal-label" for="email">Email</label>
+        <input
+          type="email"
+          name="user-email"
+          class="modal-input"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="input-group">
+        <label class="modal-label" for="card-number">Card number</label>
+        <input
+          type="text"
+          name="card-number"
+          class="modal-input"
+          id="card-number"
+          placeholder="Enter card"
+          required
+        />
+      </div>
+      <div class="textarea-group">
+        <label class="modal-label" for="user-comment">Comments</label>
+        <textarea
+          class="modal-textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Enter your text"
+        ></textarea>
+      </div>
+      <button type="submit" class="submit-btn">submit</button>
+      <p class="modal-subtitle">
+        By clicking on "Send message" button, you agree to our
+        <a href="#" class="privacy" target="_blank" rel="noopener noreferrer"
+          >Privacy Policy</a
+        >, and allow Promodo to use this information for marketing purposes.
+      </p>
+    </form>
+  </div>
+</div>
+
     <button id="back-to-top-btn">
       <svg class="back-to-top-icon" width="40" height="40">
         <use href="/project-thewatchspot/assets/icons-263d0405.svg#icon-left"></use>
