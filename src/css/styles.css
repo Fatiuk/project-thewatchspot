@@ -5,6 +5,7 @@
   |============================
 */
 /**=============== Base styles ===============*/
+@import url('./base/fonts.css');
 @import url('./base/variables.css');
 @import url('./base/reset.css');
 @import url('./base/base.css');
