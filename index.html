@@ -22,8 +22,8 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    <script type="module" crossorigin src="/project-thewatchspot/assets/index-1b1a0ea0.js"></script>
-    <link rel="stylesheet" href="/project-thewatchspot/assets/index-765c4f64.css">
+    <script type="module" crossorigin src="/project-thewatchspot/assets/index-c92222c3.js"></script>
+    <link rel="stylesheet" href="/project-thewatchspot/assets/index-33466bfc.css">
   </head>
   <body>
     <!-- Header -->
@@ -999,18 +999,7 @@
         <use href="/project-thewatchspot/assets/icons-263d0405.svg#icon-close"></use>
       </svg>
     </button>
-    <div class="modal-card">
-      <img
-        srcset="/project-thewatchspot/assets/catalog-model1-4d44fee2.png 1x, /project-thewatchspot/assets/catalog-model1@2x-24312650.png 2x"
-        src="/project-thewatchspot/assets/catalog-model1-4d44fee2.png"
-        alt="watch"
-        class="modal-img"
-        width="276"
-        height="274"
-      />
-      <p class="modal-text">Tube Watch S42 Date Steel With Black Case</p>
-      <span class="price">€395</span>
-    </div>
+    <div class="modal-card"></div>
 
     <form class="modal-form">
       <div class="input-group">
@@ -1021,6 +1010,7 @@
           class="modal-input"
           id="text"
           placeholder="Enter your full name"
+          minlength="3"
           required
         />
       </div>
@@ -1043,6 +1033,8 @@
           class="modal-input"
           id="card-number"
           placeholder="Enter card"
+          pattern="[0-9]*"
+          minlength="12"
           required
         />
       </div>
