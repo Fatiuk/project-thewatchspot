@@ -24,9 +24,7 @@ function scrollFunction() {
 
 backToTopButton.addEventListener('click', smoothScrollBackToTop);
 
-// function backToTop() {
-//   window.scrollTo(0, 0);
-// }
+// function backToTop() {window.scrollTo(0, 0);}
 
 function smoothScrollBackToTop() {
   const targetPosition = 0;
