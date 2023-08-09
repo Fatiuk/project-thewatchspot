@@ -1,91 +1,111 @@
 /* ================================ flip-card ==============================*/
 .flip-card-inner {
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    /* Safari */
-    backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
 }
 
-.flip-card-front>img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.flip-card-front > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* ================================ all style ==============================*/
-.catalog-button{
-    transition: border var(--typical-transition);
+.catalog-button {
+  transition: border var(--typical-transition);
 }
-.catalog-button:hover{
-    border-color: var(--color-white);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.catalog-button:hover {
+  border-color: var(--color-white);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.overlay-title{
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: var(--color-white);
+.overlay-title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--color-white);
 }
-.overlay-text{
-    margin-bottom: 14px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.01em;
-    color: var(--color-white-alpha);
+.overlay-text {
+  margin-bottom: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: var(--color-white-alpha);
 }
-.content{
-    margin-top: 14px;
+.content {
+  margin-top: 14px;
 }
 
-.catalog-title{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    margin-bottom: 4px;
-    color: var(--color-black);
+.catalog-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  color: var(--color-black);
 }
-.catalog-text{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: var(--color-black-alpha);
+.catalog-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: var(--color-black-alpha);
+}
+
+.selected-card {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.selected-card::before {
+  content: 'SELECTED';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #42b983;
+  padding: 2px 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 /* ================================ mobile style ==============================*/
-@media screen and (max-width: 1279px){
-    .model-watch{
+@media screen and (max-width: 1279px) {
+  .model-watch {
     display: none;
-    }
-    .content-item{
+  }
+  .content-item {
     max-width: 336px;
     height: 410px;
-    }
-    .flip-card {
+  }
+  .flip-card {
     position: relative;
     background-color: transparent;
     height: 360px;
     max-width: 336px;
     perspective: 1000px;
-}
-.flip-card-back {
+  }
+  .flip-card-back {
     background-color: var(--color-dark-green);
     color: white;
     max-width: 336px;
@@ -94,16 +114,16 @@
     left: 0;
     transform: rotateY(180deg);
     border-radius: 8px;
+  }
 }
-}
-@media screen and (max-width: 767px){
-    .catalog-list {
+@media screen and (max-width: 767px) {
+  .catalog-list {
     display: flex;
     flex-direction: column;
     margin: 0;
     gap: 40px 0px;
-        }
-    .catalog-button{
+  }
+  .catalog-button {
     display: block;
     margin-left: auto;
     padding: 14px 28px;
@@ -114,41 +134,41 @@
     text-transform: uppercase;
     background-color: var(--color-dark-green);
     color: var(--color-white);
+  }
 }
-}
-@media screen and (min-width: 320px){
-    .card-back-content{
+@media screen and (min-width: 320px) {
+  .card-back-content {
     padding: 46px 59px 41px 40px;
-}
-.catalog-box-title {
+  }
+  .catalog-box-title {
     font-weight: 600;
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: -0.02em;
     margin-bottom: 40px;
-}
+  }
 }
 /* ================================ tablet style ==============================*/
-@media screen and (max-width: 1279px){
-    .catalog-list{
+@media screen and (max-width: 1279px) {
+  .catalog-list {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 32px;
     margin-bottom: 40px;
-    }
+  }
 }
-@media screen and (min-width: 768px){
-    .card-back-content{
+@media screen and (min-width: 768px) {
+  .card-back-content {
     padding: 46px 60px 39px 40px;
-}
-    .catalog-box-title{
+  }
+  .catalog-box-title {
     font-weight: 600;
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 40px;
-}
-    .catalog-button{
+  }
+  .catalog-button {
     display: block;
     margin-left: auto;
     padding: 18px 35px;
@@ -159,37 +179,37 @@
     text-transform: uppercase;
     background-color: var(--color-dark-green);
     color: var(--color-white);
-}
+  }
 }
 /* ================================ desktop style ==============================*/
-@media screen and (min-width: 1280px){
-    .catalog-box-title{
+@media screen and (min-width: 1280px) {
+  .catalog-box-title {
     font-weight: 600;
     font-size: 40px;
     line-height: 1.1;
     letter-spacing: -0.02em;
     margin-bottom: 64px;
-}
-    .card-back-content{
+  }
+  .card-back-content {
     padding: 26px 20px 20px 20px;
-}
-    .content-item{
+  }
+  .content-item {
     max-width: 276px;
     height: 375px;
-    }
-    .flip-card {
+  }
+  .flip-card {
     position: relative;
     background-color: transparent;
     max-width: 276px;
     perspective: 1000px;
-}
-    .catalog-list {
+  }
+  .catalog-list {
     display: flex;
     flex-wrap: wrap;
     gap: 64px 24px;
     margin-bottom: 80px;
-        }
-    .flip-card-back {
+  }
+  .flip-card-back {
     background-color: var(--color-dark-green);
     color: white;
     max-width: 276px;
@@ -198,5 +218,5 @@
     left: 0;
     transform: rotateY(180deg);
     border-radius: 8px;
-}
+  }
 }
